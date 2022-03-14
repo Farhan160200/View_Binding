@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.widget.Toast
 import com.farhanfarkaann.viewbinding.databinding.ActivityMainBinding
 
+
 //deklarasi variable binding
-private lateinit var binding: ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
