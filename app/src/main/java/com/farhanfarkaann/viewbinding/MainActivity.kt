@@ -18,13 +18,13 @@ class MainActivity : AppCompatActivity() {
         //memanggil layout dengan menggunakan binding.root
         setContentView(binding.root)
 
-        var number = 1
+        var number = 0
         //membuat click listener pada button
         binding.btnviewbinding.setOnClickListener {
             Toast.makeText(this,"Berhasil ditambahkan",Toast.LENGTH_LONG).show()
-            number += 1
+            number += 10
             //mengubah value textView
-            binding.tvNumber.text = number.toString()
+            binding.textAngka.text = number.toString()
         }
 
     }

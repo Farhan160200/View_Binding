@@ -7,7 +7,19 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvNumber"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="penambahan angka 10"
+        app:layout_constraintBottom_toTopOf="@+id/text_angka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_angka"
         style="@style/TextAppearance.AppCompat.Display1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,13 +33,13 @@
     <Button
         android:id="@+id/btnviewbinding"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
-        android:text="+1"
-        app:layout_constraintEnd_toEndOf="@+id/tvNumber"
+        android:text="+10"
+        app:layout_constraintEnd_toEndOf="@+id/text_angka"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvNumber"
-        app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+        app:layout_constraintStart_toStartOf="@+id/text_angka"
+        app:layout_constraintTop_toBottomOf="@+id/text_angka" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
