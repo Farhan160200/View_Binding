@@ -6,10 +6,11 @@ import android.widget.Toast
 import com.farhanfarkaann.viewbinding.databinding.ActivityMainBinding
 
 
-//deklarasi variable binding
+
 
 
 class MainActivity : AppCompatActivity() {
+    //deklarasi variable binding
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
