@@ -2,6 +2,7 @@ package com.farhanfarkaann.viewbinding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.farhanfarkaann.viewbinding.databinding.ActivityMainBinding
 
 //deklarasi variable binding
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var number = 1
         //membuat click listener pada button
         binding.btnviewbinding.setOnClickListener {
+            Toast.makeText(this,"Berhasil ditambahkan",Toast.LENGTH_LONG).show()
             number += 1
             //mengubah value textView
             binding.tvNumber.text = number.toString()
